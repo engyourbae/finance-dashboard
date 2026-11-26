@@ -1,0 +1,17 @@
+# Rahasia
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+js/config.js
+
+# Build & dependensi
+dist/
+node_modules/
+npm-debug.log*
+
+# Sistem
+.DS_Store
+Thumbs.db
+*.log
