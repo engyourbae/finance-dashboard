@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { persist-credentials: false }
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with: { node-version: 20 }
       - name: Pindai secret di repo (gagal bila ada kunci/URL/token)
         run: node scripts/check-secrets.js
@@ -38,7 +38,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { persist-credentials: false }
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with: { node-version: 20 }
       - name: Build dist/ dengan config dari GitHub Secrets
         env:
